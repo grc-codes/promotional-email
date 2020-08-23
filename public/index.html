@@ -13,10 +13,12 @@
         border-collapse: 0;
         width: 100%;
         box-sizing: border-box;
+        overflow: hidden;
       }
 
       td {
         padding: 0;
+        max-width: 100%;
       }
 
       tr {
@@ -33,9 +35,10 @@
       }
 
       .container {
-        width: 600px;
+        max-width: 600px;
         margin: 0 auto;
         margin-bottom: 15px;
+        width: 100%;
       }
 
       .header-row {
@@ -142,18 +145,18 @@
       .social-row a img {
         display: inline-block;
       }
-
-      .app-store-table {
-        width: 48%;
-      }
-
-      .play-store-table {
-        width: 48%;
-      }
       
       .footer-row {
         width: 100%;
         background: #fff;
+      }
+
+      .footer-row p {
+        font-size: 16px;
+      }
+
+      .footer-row p a {
+        font-size: 12px;
       }
 
     </style>
@@ -161,7 +164,7 @@
   <body>
     <!-- Start of HTML Email -->
     <table>
-      <tr>
+      <tr style="margin: 0 auto;">
         <td>
           <!-- Start of container -->
           <table class="container">
@@ -506,17 +509,11 @@
                     <td style="width: 100%; padding: 0 40px 30px;">
                       <table class="app-store-table">
                         <tr>
-                          <td align="right">
-                            <a href="#" style="display: inline-block;">
+                          <td style="white-space: nowrap;">
+                            <a href="#" style="display: inline-block; width: 50%; text-align: right;">
                               <img style="margin-right: 20px;" width="136" height="46" src="/img/app-store.png" />
                             </a>
-                          </td>
-                        </tr>
-                      </table>
-                      <table algin="right" class="play-store-table">
-                        <tr>
-                          <td>
-                            <a href="#" style="display: inline-block;">
+                            <a href="#" style="display: inline-block; width: 50%;">
                               <img height="45" width="152" src="/img/play-store.png" />
                             </a>
                           </td>
@@ -534,7 +531,56 @@
                 <table class="footer-row">
                   <tr>
                     <td>
-
+                      <table style="background: #515151; text-align: center; padding: 15px 30px 10px;">
+                        <tr>
+                          <td>
+                            <p style="color: #ececec; margin: 0 0 11px;">
+                              <strong>
+                                Where to Stream HBO Max
+                              </strong>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img width="420" height="50" src="/img/stream-devices.jpg" />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background: #030328; padding: 30px; text-align: center;">
+                      <img style="display: inline-block; padding-bottom: 15px;" width="134" height="25" src="/img/hbo-logo.png" />
+                      <p style="margin: 0 0 11px;">
+                        <strong>
+                          <a style="color: #1155cc; text-decoration: none;" href="https://www.google.com/maps/search/30+Hudson+Yards,+New+York,+NY+10001?entry=gmail&source=g">
+                            30 Hudson Yards, New York, NY 10001
+                          </a>
+                        </strong>
+                      </p>
+                      <p style="margin: 0 0 11px; color: #fff;">
+                        <strong>
+                          <a style="text-decoration: none; color: #fff;" href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsE2C5TqGc-2FjhNYRzv081cPXewThHTPV0jEZrSCiEiE3gy14xs6TGCbC7gTJXkJGwRvc9xQG-2B-2BmuUDJYDKQYZudj31dXBTsGgcgakS491bUudof6F_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUerehdBtxDFgPk-2BnRHnq7uHZwjo3-2BadI49fNufOR3Av4efN3zMAPL3loueqJSM3RoftAlYNrx6z1acmF9Ns3q0WJMkxVwqxuWnTYVPUnKZ2-2FodUe78T1qE2-2BiaHM1yIzPhfepKW-2FfARM4fQbArFIJqing-3D-3D">
+                            HBOMax.com
+                          </a>
+                           | 
+                          <a style="text-decoration: none; color: #fff;" href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsFRMzjuYjVyqfWpJx1P9Kj4bdNsVpuNP5kskcHQ5DoBUYNpAuxQFvxDDaWFacGeHheF8N3U-2BwqoiXHeuk5ZWvPIV39hXXt6JgAOi6Eu6erHUvxNj_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUerEGOCDn-2Bu-2BHTktXZFGQJ8vqU0bWBWCeng5MpotwWgxIlsUedwbzQh58yRr-2FQHhYDVxbT0iCGT0wZBROsiB6mQdWHhLn7IcpGO-2BIXXwXa9A0A2Z3eiJ0a7AYCfne2CoVWqupH0T5UYkFpEEloEoOWgww-3D-3D">
+                            Privacy Policy
+                          </a>
+                           | 
+                          <a style="text-decoration: none; color: #fff;" href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsD-2Fm5X3XPneCFUTDj2LPbzwOSW36ZyQKAuZXiXxcEDVRYg8Bcy-2FW27MAusJAB9dnWJygm1hKDsMrBwPL0xi8atET-2BfgaAnN558NVDt05LqX6JOY6-2FR9iqvsbOXdCddzy1Sx8jsk-2FIKSBbG2721RT3INCPt8gXRZW-2Bsev6lRzLPsLlHNGMhY2a-2FmuJZ0W-2B6VCTzhp9UgFDUPCV7FgXJXAVQk-2F0i1rO6ui5AYs1ulrVIaszcOlp-2F7GaLfsVwbiWRy4Gz2XFzIjFSGu-2BFjbaJ-2FXOBIl9Sz-2BpGJpK-2FUovSUcgo3fU8PjqejcnK0SKCwu-2FomrWejEQ2zHLGL2N43QSK4-2BIJZ3MSuuof8saFzxuE5iGr4xhMBxlOZKs4-2BNf0-2FUG3F2fzAkhi5-2Fr3fEGYzq8gVwrNCEFFG5cxKrlgYK86tzvLI8Gpn-2BrKTjsCpzJq0kZyZhRe255-2BeNoLQxCfWuAoKFyeM3FuvjxPV-2FnLpm311dvtX4-2Fi-2B1rGU2HqZUvaZr443eyj-2FyyAZa26zLT03Jcyw-2B-2BHA6Wp4bxVV5TWTVFECWMZUO7FKb4mNhx-2Bn6JAPgkzogDA-3D-3Di8TW_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUervJbsw4g6WBhFobcr1XkVoLHEBQhCDtlEiABbj6EC9U-2BG0zncxr5NBbfogARj83ZH9yhNmIn9DaWQkIVt891XTNZAvm3JPJDRzFW-2FKj4D1VmGh2ZsXPkoqWHwmoyfxppe70GC41JEM1ZQpl8tdnJYXA-3D-3D">
+                            Unsubscribe
+                          </a>
+                           | 
+                          <a style="text-decoration: none; color: #fff;" href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsKX64mcrUmwk3kAvAxkImYA3wJOgx05bgoRTdTxa6eDxg8x7-2FFw1bcNpNn7T64FNIdBr2G8W-2Fmr7nqMHDLbZ5oYe9mFdqoM0L-2FPRHhhzH-2BR8EvwF_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUercSOFGo-2BknrBD6CuKNpGCFd9DfIoWY7-2FT6xNQyR1gBiOGwJYj3vneZ8WwUKBWUMy6e3kzPBeip6f14rcTj8jvgA6dWBl1G-2Fn-2F5CpYcvKMLi7EqKufOiZEY163LMQaqKAZ2hYIX7Fmxte3F6aN-2FHeWZg-3D-3D">
+                            Help Center
+                          </a>
+                        </strong>
+                      </p>
+                      <p style="margin: 0 0 11px; color: #fff; line-height: 18px; font-size: 12px;">
+                        This email was sent from a notification-only address that cannot accept incoming email. Please do not reply to this message.
+                      </p>
                     </td>
                   </tr>
                 </table>
