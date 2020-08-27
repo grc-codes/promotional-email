@@ -25,153 +25,177 @@
         width: 100%;
       }
 
-      body {
-        box-sizing: border-box;
-        width: 100%;
-        margin: 0;
-        font-family: Helvetica, Arial, sans-serif;
-        background: #f6f6f6;
-        color: #030328;
-      }
-
       .container {
-        max-width: 600px;
-        margin: 0 auto;
-        margin-bottom: 15px;
-        width: 100%;
-      }
-
-      .header-row {
-        width: 100%;
-      }
-
-      .main-row {
-        width: 100%;
-        background: #fff;
-      }
-
-      .main-row h1 {
-        font-size: 36px;
-      }
-
-      .main-row p {
-        font-size: 16px;
-      }
-
-      .main-row a {
-        text-decoration: underline;
-        color: #5b1ce6;
-      }
-
-      .main-row span {
-        font-size: 18px;
-      }
-
-      .suggestions-row {
-        width: 100%;
-        background: #fff;
-      }
-
-      .suggestions-row h2 {
-        font-size: 24px;
-      }
-
-      .suggestions-table {
-        width: 100%;
+        width: 600px;
         margin: 0 auto;
       }
 
-      .title-table {
-        width: 172px;
-        display: inline-block;
-      }
+      @media only screen and (min-width: 960px) {
+        .main-row h1 {
+          font-size: 36px;
+        }
 
-      .title-table img {
-        width: 100%;
-        display: inline-block;
-      }
+        .main-row p {
+          font-size: 16px;
+        }
 
-      .title-table p {
-        font-size: 14px;
-        line-height: 21px;
-        margin: 0 0 12px;
-        text-align: center;
-      }
+        .main-row span {
+          font-size: 18px;
+        }
 
-      .title-table a {
-        text-decoration: none;
-        color: #5b1ce6;
-      }
+        .suggestions-row h2 {
+          font-size: 24px;
+        }
 
-      .cta-row {
-        width: 100%;
-        background: #fff;
-        padding: 50px 30px;
-      }
+        .title-table {
+          width: 31.85%;
+        }
 
-      .cta-row h2 {
-        font-size: 24px;
-      }
+        .title-table p {
+          font-size: 14px;
+        }
 
-      .left-cta-table {
-        width: 48%;
-        display: inline-block;
-      }
+        .cta-row h2 {
+          font-size: 24px;
+        }
 
-      .right-cta-table {
-        width: 46%;
-        display: inline-block;
-      }
+        .right-cta-table {
+          font-size: 14px;
+        }
 
-      .right-cta-table {
-        font-size: 14px;
-      }
+        .social-row p {
+          font-size: 12px;
+        }
 
-      .social-row {
-        width: 100%;
-        background: #fff;
-      }
+        .footer-row p {
+          font-size: 16px;
+        }
 
-      .social-row p {
-        font-size: 12px;
-      }
-
-      .icons-row a {
-        display: inline-block !important;
-        width: 32px !important;
-        height: 32px !important;
-      }
-
-      .social-row a img {
-        display: inline-block;
+        .footer-row p a {
+          font-size: 12px;
+        }
       }
       
-      .footer-row {
-        width: 100%;
-        background: #fff;
+      @media only screen and (max-width: 960px) {
+        .main-row h1 {
+          font-size: 4.688vw;
+        }
+
+        .main-row p {
+          font-size: 2.083vw;
+        }
+
+        .main-row span {
+          font-size: 2.344vw;
+        }
+
+        .suggestions-row h2 {
+          font-size: 3.125vw;
+        }
+
+        .title-table {
+          width: 48%;
+        }
+
+        .title-table p {
+          font-size: 1.823vw;
+        }
+
+        .cta-row h2 {
+          font-size: 3.125vw;
+        }
+
+        .right-cta-table {
+          font-size: 1.823vw;
+        }
+
+        .social-row p {
+          font-size: 1.563vw;
+        }
+
+        .footer-row p {
+          font-size: 2.083vw;
+        }
+
+        .footer-row p a {
+          font-size: 1.563vw;
+        }
+        
       }
 
-      .footer-row p {
-        font-size: 16px;
-      }
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 100%;
+        }
 
-      .footer-row p a {
-        font-size: 12px;
-      }
+        .main-row h1 {
+          font-size: 6vw;
+        }
 
+        .main-row p {
+          font-size: 3.75vw;
+        }
+
+        .main-row span {
+          font-size: 3vw;
+        }
+
+        .suggestions-row h2 {
+          font-size: 4vw;
+        }
+
+        .title-table {
+          width: 100%;
+        }
+
+        .title-table img {
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        .title-table p {
+          font-size: 2.5vw;
+        }
+
+        .cta-row h2 {
+          font-size: 4vw;
+        }
+
+        .right-cta-table {
+          font-size: 2.5vw;
+        }
+
+        .social-row p {
+          font-size: 2.333vw;
+        }
+
+        .footer-row p {
+          font-size: 2.667vw;
+        }
+
+        .footer-row p a {
+          font-size: 2vw;
+        }
+
+        .footer-row .top-footer img {
+          max-width: 420px;
+          width: 100%;
+        }
+
+      }
     </style>
   </head>
-  <body>
+  <body style="box-sizing: border-box; width: 100%; margin: 0; font-family: Helvetica, Arial, sans-serif; background: #f6f6f6; color: #030328;">
     <!-- Start of HTML Email -->
     <table>
       <tr style="margin: 0 auto;">
         <td>
           <!-- Start of container -->
-          <table class="container">
+          <table class="container" style="margin-bottom: 15px;">
             <!-- Start of header row -->
             <tr>
               <td>
-                <table class="header-row">
+                <table class="header-row" style="width: 100%;">
                   <tr>
                     <td>
                       <img src="/img/hbo-header.png" style="width: 100%; display: block;" />
@@ -189,16 +213,18 @@
             <!-- Start of main row -->
             <tr>
               <td>
-                <table class="main-row">
+                <table class="main-row" style="background: #fff; width: 100%;">
                   <tr>
-                    <td style="padding: 50px 30px;">
+                    <td style="padding: 50px 30px 0;">
                       <h1 style="margin-bottom: 22px; margin-top: 0; line-height: 43px; font-weight: bold; text-align: center;">Save All Of Your Favorites, All In One Place</h1>
-                      <p style="margin-bottom: 12px; margin-top: 0; line-height: 24px; text-align: center;">Get ready for movie night with a handy list of favorites, all hand-picked by you. <a href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsKX64mcrUmwk3kAvAxkImYBkglvkwDWriR9xeYxbc7RkhdFay8E1vvl3gXbNP23FR3g-2Fh50YK1nIvS62b-2BBPlRtzhfOTB9vT-2F2flZnsKKjd-2FLVM-2B6Qjr2vvQjPvdNoAaN8l9hyWpLQ6gSmBn6KZA2JM-3DDs8Y_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUer-2FLUQt4J2f28af-2FjUQCKS-2Bz3kZI-2FbzkPikaHKfmiLBk1Hm8yAZTNXsg7flew-2BNr0VweaMbEzG5tIEreNPNPmzixvp6Md8etyhCXTO-2FC7f-2Fh4oAJtzwM5ASNaAhWKaXoFXu2UhUnvcapozclBMwmO71g-3D-3D">My List</a> lets you save anything to stream now, or after the next popcorn break. Want to make <em>extra</em> sure you never miss an episode?<br><a href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsKX64mcrUmwk3kAvAxkImYBJIDKvcIp3GMq7KtUToGAnJicd-2FitEssuxPo1abF6d0LnW9sg3afOp0My38iAwlgK-2B66pZ-2BoaumM0VM1BdvYBlt9HwY0MZVmRZGdUvDPLpQEgZabfhYn9Yu-2BGvmS979tI-3D0qhH_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUertYh4tgCGz-2BpsWkdGIkW0N1LYssz8W6-2Fi-2FKPoOLIdl-2FZXpaWORa-2BzhdQNfzg3gt3KVU7TwqOf8zmLBa4435MY8ImS9hunofQebajlLos7Y6MwwUi1amW7H0857c0ZKFeNjqrZaANvcNEZ-2FRBcCzfqMw-3D-3D">Opt in for push messages</a> to stay on top of your favorite series.</p>
-                      <div style="display: block; width: 50%; margin: 0 auto; padding-top: 5px;">
-                        <span style="display: inline-block; width: auto; border-radius: 30px; border: 2px solid #5b1ce6;">
-                          <a style="text-decoration: none; white-space: nowrap; width: auto; color: #fff; display: inline-block; background: #5b1ce6; font-weight: bold; border-radius: 30px; text-align: center; border-color: #5b1ce6; border-style: solid; border-width: 10px 30px;" href="https://play.hbomax.com/page/urn:hbo:page:home">START ADDING FAVORITES</a>
-                        </span>
-                      </div>
+                      <p style="margin-bottom: 12px; margin-top: 0; line-height: 24px; text-align: center;">Get ready for movie night with a handy list of favorites, all hand-picked by you. <a style="text-decoration: underline; color: #5b1ce6;" href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsKX64mcrUmwk3kAvAxkImYBkglvkwDWriR9xeYxbc7RkhdFay8E1vvl3gXbNP23FR3g-2Fh50YK1nIvS62b-2BBPlRtzhfOTB9vT-2F2flZnsKKjd-2FLVM-2B6Qjr2vvQjPvdNoAaN8l9hyWpLQ6gSmBn6KZA2JM-3DDs8Y_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUer-2FLUQt4J2f28af-2FjUQCKS-2Bz3kZI-2FbzkPikaHKfmiLBk1Hm8yAZTNXsg7flew-2BNr0VweaMbEzG5tIEreNPNPmzixvp6Md8etyhCXTO-2FC7f-2Fh4oAJtzwM5ASNaAhWKaXoFXu2UhUnvcapozclBMwmO71g-3D-3D">My List</a> lets you save anything to stream now, or after the next popcorn break. Want to make <em>extra</em> sure you never miss an episode?<br><a  style="text-decoration: underline; color: #5b1ce6;" href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsKX64mcrUmwk3kAvAxkImYBJIDKvcIp3GMq7KtUToGAnJicd-2FitEssuxPo1abF6d0LnW9sg3afOp0My38iAwlgK-2B66pZ-2BoaumM0VM1BdvYBlt9HwY0MZVmRZGdUvDPLpQEgZabfhYn9Yu-2BGvmS979tI-3D0qhH_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUertYh4tgCGz-2BpsWkdGIkW0N1LYssz8W6-2Fi-2FKPoOLIdl-2FZXpaWORa-2BzhdQNfzg3gt3KVU7TwqOf8zmLBa4435MY8ImS9hunofQebajlLos7Y6MwwUi1amW7H0857c0ZKFeNjqrZaANvcNEZ-2FRBcCzfqMw-3D-3D">Opt in for push messages</a> to stay on top of your favorite series.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 0 30px 50px;">
+                      <span align="center" style="display: inline-block; width: auto; border-radius: 30px; border: 2px solid #5b1ce6;">
+                        <a style="text-decoration: none; white-space: nowrap; color: #fff; display: inline-block; background: #5b1ce6; font-weight: bold; border-radius: 30px; text-align: center; border-color: #5b1ce6; border-style: solid; border-width: 10px 30px;" href="https://play.hbomax.com/page/urn:hbo:page:home">START ADDING FAVORITES</a>
+                      </span>
                     </td>
                   </tr>
                 </table>
@@ -208,10 +234,10 @@
             <!-- Start of suggestions row -->
             <tr>
               <td>
-                <table class="suggestions-row">
+                <table class="suggestions-row" style="width: 100%; background: #fff;">
                   <tr>
                     <td>
-                      <table class="suggestions-table">
+                      <table class="suggestions-table" style="width: 100%; margin: 0 auto;">
                         <tr>
                           <td>
                             <h2 style="text-align: center; margin-top: 0; margin-bottom: 15px;">
@@ -221,17 +247,17 @@
                         </tr>
                         <tr>
                           <td style="padding: 0 30px 30px; width: 100%;">
-                            <table class="title-table">
+                            <table class="title-table" style="display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/insecure-title.jpg" style="width: 100%; height: 100%; height: 100%;" />
+                                  <img src="/img/insecure-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6;">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -239,17 +265,17 @@
                                 </td>
                               </tr>
                             </table>
-                            <table class="title-table" style="margin: 0 7px;">
+                            <table class="title-table" style="margin: 0 7px; display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/rick-and-morty-title.jpg" style="width: 100%; height: 100%;" />
+                                  <img src="/img/rick-and-morty-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6;">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -257,17 +283,17 @@
                                 </td>
                               </tr>
                             </table>
-                            <table class="title-table">
+                            <table class="title-table" style="display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/perry-mason-title.jpg" style="width: 100%; height: 100%;" />
+                                  <img src="/img/perry-mason-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6;">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -282,7 +308,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <table class="suggestions-table">
+                      <table class="suggestions-table" style="width: 100%; margin: 0 auto;">
                         <tr>
                           <td>
                             <h2 style="text-align: center; margin-top: 0; margin-bottom: 15px;">
@@ -292,17 +318,17 @@
                         </tr>
                         <tr>
                           <td style="padding: 0 30px 30px; width: 100%;">
-                            <table class="title-table">
+                            <table class="title-table" style="display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/scoob-title.jpg" style="width: 100%; height: 100%; height: 100%;" />
+                                  <img src="/img/scoob-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6;">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -310,17 +336,17 @@
                                 </td>
                               </tr>
                             </table>
-                            <table class="title-table" style="margin: 0 7px;">
+                            <table class="title-table" style="margin: 0 7px; display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/wonder-woman-title.jpg" style="width: 100%; height: 100%;" />
+                                  <img src="/img/wonder-woman-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6;">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -328,17 +354,17 @@
                                 </td>
                               </tr>
                             </table>
-                            <table class="title-table">
+                            <table class="title-table" style="display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/bohemian-rhapsody-title.jpg" style="width: 100%; height: 100%;" />
+                                  <img src="/img/bohemian-rhapsody-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6;">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -353,7 +379,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <table class="suggestions-table">
+                      <table class="suggestions-table" style="width: 100%; margin: 0 auto;">
                         <tr>
                           <td>
                             <h2 style="text-align: center; margin-top: 0; margin-bottom: 15px;">
@@ -363,17 +389,17 @@
                         </tr>
                         <tr>
                           <td style="padding: 0 30px 30px; width: 100%;">
-                            <table class="title-table">
+                            <table class="title-table" style="display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/doctor-who-title.jpg" style="width: 100%; height: 100%; height: 100%;" />
+                                  <img src="/img/doctor-who-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -381,17 +407,17 @@
                                 </td>
                               </tr>
                             </table>
-                            <table class="title-table" style="margin: 0 7px;">
+                            <table class="title-table" style="margin: 0 7px; display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/south-park-title.jpg" style="width: 100%; height: 100%;" />
+                                  <img src="/img/south-park-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6;">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -399,17 +425,17 @@
                                 </td>
                               </tr>
                             </table>
-                            <table class="title-table">
+                            <table class="title-table" style="display: inline-block;">
                               <tr>
                                 <td style="padding: 0 0 15px;">
-                                  <img src="/img/katy-keene-title.jpg" style="width: 100%; height: 100%;" />
+                                  <img src="/img/katy-keene-title.jpg" style="width: 100%; height: 100%; display: inline-block;" />
                                 </td>
                               </tr>
                               <tr>
                                 <td>
-                                  <p>
+                                  <p style="line-height: 21px; margin: 0 0 12px; text-align: center;">
                                     <strong>
-                                      <a href="#">
+                                      <a href="#" style="text-decoration: none; color: #5b1ce6;">
                                         ADD TO MY LIST ▸
                                       </a>
                                     </strong>
@@ -429,7 +455,7 @@
             <!-- Start of cta row -->
             <tr>
               <td>
-                <table class="cta-row">
+                <table class="cta-row" style="width: 100%; background: #fff; padding: 50px 30px;">
                   <tr>
                     <td>
                       <h2 style="text-align: center; color: #333; margin: 0 0 15px; line-height: 24px;">
@@ -439,7 +465,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <table class="left-cta-table">
+                      <table class="left-cta-table" style="display: inline-block; width: 48%;">
                         <tr>
                           <td>
                             <a href="http://ablink.mail.hbomax.com/ls/click?upn=Gje5LKVH-2FXrx73CmItOJsKX64mcrUmwk3kAvAxkImYDShB9-2F-2FIkd-2FKFD1UBxq-2BYDNYuqMT38u1eCj5mGhVzSLRjCnAzWcgNCK39ZcODnZvpF3JIcGJMFX62jiPYJmDCiKCF6wnCNo6rRtB5cKeiPSg-3D-3DWn6Z_U19Eb2uhfU-2BTwEQvanaNjJ4mq8-2BKC3WpjAfGkxgYvEmE6ahgBq6l8uih56ExKSXH-2BGOKuQnH2sa1VLbxXMJl1XTj00OgO9txjBSCLKnN2ywDEx3ueLrOmUSVFQfsyrYzcGqwV-2B3U88vuLyh8EkteiMbgbEoPdn029zTQfC0k97AgT86lM01CLW6CSQuOSaxn7cIEND6EhFATk9x8fnSbpfmPciLu8csEovknjv-2FCVTROZ11In0WqeGRaU3IFWymoQaLuMi9k8WQ6K5-2FOUtwQvTygEXLPIPoM7EbikNC-2FQzbcKWRR5-2BwqANHC2vK7thyaRLf7oI4WWKSM9db-2Fff3kHPBYl14AHKti39Pfg0eoY09-2FjsDb7rCB41-2FOCrcTvD3gwzzY7f2G-2FTzGy7oCuqVBmjAp5WiYNvFU7rwBVUJBB1BJ4gUf1aW63bN2NQ8B0Dp9w3L18Df7LwrNtISb0jpHgV8P48pHkX3mkBFwNeSw7J3fKhYpw7eb3l2GBYE8jUerrpV-2BBXQfLIF74FCEFHu-2FweFECCS5px1m1tZE64OxCmq4OTbs1dTlizs3y3KOrhZroz9tCC5nQQG460uhzmusoIX2r124BdZwfFCfl6hNvPaXzZBlVniWSnXdoEyjYuq7KoWtJAD80ZrSmNAeSmMDtQ-3D-3D">
@@ -448,7 +474,7 @@
                           </td>
                         </tr>
                       </table>
-                      <table class="right-cta-table" align="right">
+                      <table class="right-cta-table" align="right" style="display: inline-block; width: 46%;">
                         <tr>
                           <td style="padding-bottom: 5px;">
                             <p style="text-align: left; line-height: 17px; color: #333; margin: 0 0 11px;">
@@ -475,7 +501,7 @@
             <!-- Start of social row -->
             <tr>
               <td>
-                <table class="social-row">
+                <table class="social-row" style="width: 100%; background: #fff;">
                   <tr>
                     <td style="padding: 0 30px;">
                       <p style="text-align: center; line-height: 12px; color: #333; margin: 0 0 11px;">
@@ -488,16 +514,16 @@
                       <table class="icons-row">
                         <tr>
                           <td style="width: 26%; text-align: center;">
-                            <a href="#">
+                            <a href="#" style="display: inline-block !important; width: 32px !important; height: 32px !important;">
                               <img style="width: 100%; height: 100%;" src="/img/fb-icon.png" />
                             </a>
-                            <a href="#">
+                            <a href="#" style="display: inline-block !important; width: 32px !important; height: 32px !important;">
                               <img style="width: 100%; height: 100%;" src="/img/tw-icon.png" />
                             </a>
-                            <a href="#">
+                            <a href="#" style="display: inline-block !important; width: 32px !important; height: 32px !important;">
                               <img style="width: 100%; height: 100%;" src="/img/ig-icon.png" />
                             </a>
-                            <a href="#">
+                            <a href="#" style="display: inline-block !important; width: 32px !important; height: 32px !important;">
                               <img style="width: 100%; height: 100%;" src="/img/yt-icon.png" />
                             </a>
                           </td>
@@ -528,10 +554,10 @@
             <!-- Start of footer row -->
             <tr>
               <td>
-                <table class="footer-row">
+                <table class="footer-row" style="width: 100%; background: #fff;">
                   <tr>
                     <td>
-                      <table style="background: #515151; text-align: center; padding: 15px 30px 10px;">
+                      <table class="top-footer" style="background: #515151; text-align: center; padding: 15px 30px 10px;">
                         <tr>
                           <td>
                             <p style="color: #ececec; margin: 0 0 11px;">
